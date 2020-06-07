@@ -29,7 +29,6 @@ const Dashboard: React.FC = () => {
     async function loadFoods(): Promise<void> {
       await api.get('foods').then(response => {
         setFoods(response.data);
-        console.log(response.data);
       });
     }
 
